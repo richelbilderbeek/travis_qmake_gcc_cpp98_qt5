@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>my_dialog</class>
- <widget class="QDialog" name="my_dialog">
+ <class>my_qt5_dialog</class>
+ <widget class="QDialog" name="my_qt5_dialog">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
     <width>160</width>
-    <height>64</height>
+    <height>95</height>
    </rect>
   </property>
   <layout class="QGridLayout" name="gridLayout">
@@ -17,14 +17,17 @@
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="travis_qmake_gcc_cpp98_qt.qrc">:/images/TravisCI.png</pixmap>
+      <pixmap resource="travis_qmake_gcc_cpp98_qt5.qrc">:/images/TravisCI.png</pixmap>
      </property>
     </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QKeySequenceEdit" name="keySequenceEdit"/>
    </item>
   </layout>
  </widget>
  <resources>
-  <include location="travis_qmake_gcc_cpp98_qt.qrc"/>
+  <include location="travis_qmake_gcc_cpp98_qt5.qrc"/>
  </resources>
  <connections/>
 </ui>
