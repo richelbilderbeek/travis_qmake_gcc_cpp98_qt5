@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>160</width>
-    <height>95</height>
+    <height>64</height>
    </rect>
   </property>
   <layout class="QGridLayout" name="gridLayout">
@@ -20,9 +20,6 @@
       <pixmap resource="travis_qmake_gcc_cpp98_qt5.qrc">:/images/TravisCI.png</pixmap>
      </property>
     </widget>
-   </item>
-   <item row="1" column="0">
-    <widget class="QKeySequenceEdit" name="keySequenceEdit"/>
    </item>
   </layout>
  </widget>
