@@ -1,5 +1,14 @@
+sudo: require
 language: cpp
 compiler: gcc
+
+before_install:
+  - sudo add-apt-repository --yes ppa:ubuntu-sdk-team/ppa
+  - sudo apt-get update -qq
+
+install:
+  - sudo apt-get install qtbase5-dev qtdeclarative5-dev libqt5webkit5-dev libsqlite3-dev
+  - sudo apt-get install qt5-default qttools5-dev-tools
 
 # Start virtual X server, from https://docs.travis-ci.com/user/gui-and-headless-browsers/
 before_script:
@@ -8,5 +17,5 @@ before_script:
   - sleep 3 # give xvfb some time to start
 
 script: 
- - ./build.sh
- - ./travis_qmake_gcc_cpp98_qt5
+  - ./build.sh
+  - ./travis_qmake_gcc_cpp98_qt5
