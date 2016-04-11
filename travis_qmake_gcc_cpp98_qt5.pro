@@ -1,5 +1,8 @@
 QT       += core gui widgets
 
+# Use highest warning level, a warning is an error
+QMAKE_CXXFLAGS += -Wall -Wextra -Weffc++ -Werror
+
 SOURCES += main.cpp
 
 SOURCES += my_qt5_dialog.cpp
