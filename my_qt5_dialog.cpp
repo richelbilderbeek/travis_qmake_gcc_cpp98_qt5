@@ -8,7 +8,10 @@ my_qt5_dialog::my_qt5_dialog(QWidget *parent) :
 {
   ui->setupUi(this);
   QTimer * const timer(new QTimer(this));
-  connect(timer,&QTimer::timeout, this, &my_qt5_dialog::close); //Qt5 syntax
+  connect(
+    timer,&QTimer::timeout, 
+    this, &my_qt5_dialog::close
+  ); 
   timer->setInterval(1000);
   timer->start();
 }
