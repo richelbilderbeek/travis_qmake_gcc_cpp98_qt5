@@ -1,3 +1,3 @@
 #!/bin/bash
-qmake -qt=qt5
+qmake
 make
