@@ -1,6 +1,6 @@
-sudo: required
-dist: xenial
 language: cpp
+dist: xenial
+sudo: required
 compiler: gcc
 
 # From https://gist.github.com/jreese/6207161#gistcomment-1462109
